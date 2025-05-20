@@ -1,0 +1,1 @@
+This is a Multiple Disease Prediction Web app where anyone can check that they have or don't have those diseases like diabetes, heart, parkinson's, breast cancer, kidney. They can check by doing entry of those medical parameters.
