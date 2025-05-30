@@ -5,21 +5,25 @@ Created on Thu Nov 21 18:00:22 2024
 @author: SOUMEN
 """
 
+import os
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+# getting the working directory of the main.py
+working_dir = os.path.dirname(os.path.abspath(__file__))
+
 #loading the saved models
 
-diabetes_model = pickle.load(open('saved files/diabetes_model.sav','rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/diabetes_model.sav','rb'))
 
-heart_disease_model = pickle.load(open('saved files/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/heart_disease_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('saved files/parkinsons_model.sav','rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/parkinsons_model.sav','rb'))
 
-breast_cancer_model = pickle.load(open('saved files/breast_cancer_model.sav','rb'))
+breast_cancer_model = pickle.load(open(f'{working_dir}/breast_cancer_model.sav','rb'))
 
-kidney_model = pickle.load(open('saved files/kidney_model.sav','rb'))
+kidney_model = pickle.load(open(f'{working_dir}/kidney_model.sav','rb'))
                                     
 
 # sidebar for navigation
